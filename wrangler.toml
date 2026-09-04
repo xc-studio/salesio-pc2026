@@ -1,5 +1,5 @@
 name = "salesio-festa-pc2026"
-compatibility_date = "2024-01-01"
+compatibility_date = "2024-09-04"
 
 [[d1_databases]]
 binding = "myDatabase"
