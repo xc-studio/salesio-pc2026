@@ -42,5 +42,20 @@
         },
         "license": "All rights reserved",
         "url": "https://japan-wordle.pages.dev/"
+    },
+    {
+        "name": "Mirror World",
+        "oneWord": "重力反転でアクションゲーム",
+        "tag": ["ゲーム", "アクション", "PC"],
+        "author": "X + C Studio",
+        "description": "横スクロールアクションゲームですが、プレイヤーは左右の移動と重力反転しか行えません。うまく重力反転を使いこなしてゴールまで行きましょう。最後のほうは重力反転以外のモードが2つでてきます。ステージ前の説明は読んだほうがいいですよ",
+        "credit": {
+            "concept": "X + C Studio",
+            "game-design": "X + C Studio",
+            "image": ["X + C Studio", "Superpowers Asset Packs (背景のみ)"],
+            "code": "X + C Studio"
+        },
+        "license": "MIT",
+        "url": "https://mirror-world.pages.dev/"
     }
 ]
