@@ -5,6 +5,14 @@
         <title>hello</title>
     </head>
     <body>
-        hello world
+        <a href="https://spaceward-blitz.pages.dev/" onclick="count('spaceward-blitz')">Spaceward Blitz</a>
+        <script>
+            function count(game) {
+                fetch("/click", {
+                    method: "POST",
+                    body: JSON.stringify({ game }),
+                });
+            }
+        </script>
     </body>
 </html>
