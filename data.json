@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Spaceward Blitz",
+        "oneWord": "シューティング",
+        "tag": ["ゲーム", "シューティング", "PC", "モバイル"],
+        "author": "X + C Studio",
+        "description": "宇宙を題材にしたシューティングゲームです。2024年に作成したものを掘り起こしました。ステージが未完成であるのはご了承ください。",
+        "credit": {
+            "concept": "X + C Studio",
+            "game-design": "X + C Studio",
+            "image": "X + C Studio",
+            "code": "X + C Studio"
+        },
+        "license": "MIT",
+        "url": "https://spaceward-blitz.pages.dev/"
+    },
+    {
+        "name": "Yacht Bot",
+        "oneWord": "ヨット最適解ボット",
+        "tag": ["ゲーム", "ダイス", "PC", "ターミナル"],
+        "author": "X + C Studio",
+        "description": "世界遊び大全などで使用されるルールのヨットの最適解を求め(本当に最適解かどうかは未証明です)、一緒に遊べるボットです。ターミナル風のUIなので基本タイピングです。クリックをする場面はないです。よってこれはキーボードのついたデバイスでのみプレイ可能となっています。",
+        "credit": {
+            "concept": "X + C Studio",
+            "game-design": "X + C Studio",
+            "image": "X + C Studio",
+            "code": "X + C Studio"
+        },
+        "license": "MIT",
+        "url": "https://yacht-bot.pages.dev/"
+    },
+    {
+        "name": "日本語Wordle",
+        "oneWord": "単語あてゲーム",
+        "tag": ["ゲーム", "パズル", "PC", "モバイル"],
+        "author": "副部長",
+        "description": "おなじみのWordleの日本語版です。四文字の単語(50音、濁音半濁音あり)を予想してあててください!",
+        "credit": {
+            "concept": "副部長",
+            "game-design": "副部長",
+            "code": ["副部長", "X + C Studio"]
+        },
+        "license": "All rights reserved",
+        "url": "https://japan-wordle.pages.dev/"
+    }
+]
