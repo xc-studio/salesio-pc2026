@@ -11,6 +11,7 @@
             "image": "X + C Studio",
             "code": "X + C Studio"
         },
+        "date": "2024-06-18",
         "license": "MIT",
         "url": "https://spaceward-blitz.pages.dev/"
     },
@@ -26,6 +27,7 @@
             "image": "X + C Studio",
             "code": "X + C Studio"
         },
+        "date": "2026-08-27",
         "license": "MIT",
         "url": "https://yacht-bot.pages.dev/"
     },
@@ -33,13 +35,14 @@
         "name": "日本語Wordle",
         "oneWord": "単語あてゲーム",
         "tag": ["ゲーム", "パズル", "PC", "モバイル"],
-        "author": "副部長",
+        "author": "Anonymous",
         "description": "おなじみのWordleの日本語版です。四文字の単語(50音、濁音半濁音あり)を予想してあててください!",
         "credit": {
-            "concept": "副部長",
-            "game-design": "副部長",
-            "code": ["副部長", "X + C Studio"]
+            "concept": "Anonymous",
+            "game-design": "Anonymous",
+            "code": ["Anonymous", "X + C Studio"]
         },
+        "date": "2026-07-18",
         "license": "All rights reserved",
         "url": "https://japan-wordle.pages.dev/"
     },
@@ -55,6 +58,7 @@
             "image": ["X + C Studio", "Superpowers Asset Packs (背景のみ)"],
             "code": "X + C Studio"
         },
+        "date": "2025-05-23",
         "license": "MIT",
         "url": "https://mirror-world.pages.dev/"
     }
