@@ -31,3 +31,18 @@ async function getGameData(path = "/data/game-data.json") {
         return null;
     }
 }
+
+async function getNews(path = "/data/news.json") {
+    try {
+        const res = await fetch(path);
+        if (!res.ok) throw new Error("Server error");
+        return await res.json();
+    } catch (err) {
+        console.error("Failed to get resources:", err);
+        return null;
+    }
+}
+
+function createArticle({ title, content, date, uuid }) {
+    const isNew = localStorage.getItem(uuid) === null;
+}
