@@ -1,0 +1,176 @@
+body {
+    background-color: #030f28;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "DotGothic16", sans-serif;
+}
+
+#container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    border: solid 5px #f1ba61;
+    background-color: #0f1d60;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.golden-text {
+    font-family: "DotGothic16", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    width: auto;
+    display: inline;
+    /* 金色のベースカラーの間に、斜め（135deg）の白い光を挟む */
+    background: linear-gradient(
+        170deg,
+        #eedfbe 0%,
+        #eedfbe 20%,
+        #f3f1ec 20%,
+        #f3f1ec 45%,
+        #eedfbe 45%,
+        #eedfbe 70%,
+        #f3f1ec 70%,
+        #f3f1ec 80%,
+        #eedfbe 80%,
+        #eedfbe 100%
+    );
+    /* 文字の形に背景をクリッピング */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-align: center;
+}
+
+.navigator {
+    width: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-item {
+    background: transparent;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-item.selected {
+    background: #fac856;
+    color: #0b0e1a;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon.home {
+    background-image: url("/assets/home-not-selected.png");
+}
+
+.nav-item.selected .icon.home {
+    background-image: url("/assets/home-selected.png");
+}
+
+.icon.game {
+    background-image: url("/assets/game-not-selected.png");
+}
+
+.nav-item.selected .icon.game {
+    background-image: url("/assets/game-selected.png");
+}
+
+.icon.news {
+    background-image: url("/assets/news-not-selected.png");
+}
+
+.nav-item.selected .icon.news {
+    background-image: url("/assets/news-selected.png");
+}
+
+/* footer */
+footer {
+    font-family: "DotGothic16", sans-serif;
+    padding: 30px;
+    background-color: #07235c;
+    color: #84a7f0;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #84a7f0;
+}
+
+/* content (home) */
+.headline {
+    width: 100%;
+    height: auto;
+    font-family: "DotGothic16", sans-serif;
+    color: white;
+}
+
+.headline::before {
+    content: "◆";
+    margin-right: 5px;
+    color: #f1ba61;
+}
+
+.section {
+    padding-left: 20px;
+}
+
+strong.coloring {
+    color: #f1ba61;
+    font-weight: normal;
+}
+
+small {
+    color: #aaaaaa;
+}
+
+#main-box a {
+    text-decoration: underline;
+    color: #f1ba61;
+    font-weight: bold;
+    font-size: 16px;
+}

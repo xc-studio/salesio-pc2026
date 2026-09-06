@@ -2,16 +2,81 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>hello</title>
-        <link rel="stylesheet" href="./src/style.css" />
-        <script src="./src/script.js"></script>
+        <title>サレジオ祭2026 PC部 作品ポータル</title>
+
+        <link rel="preload" href="/assets/logo.png" as="image" />
+        <link rel="prefetch" href="/assets/home-not-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/home-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/game-not-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/game-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/news-not-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/news-selected.png" as="image" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/src/style.css" />
+        <script src="/src/script.js"></script>
     </head>
     <body>
-        <header></header>
         <div id="container">
-            <main></main>
-            <aside></aside>
+            <header>
+                <div class="title">
+                    <img src="/assets/logo.png" class="logo" />
+                    <h1 class="golden-text">サレジオ祭2026 PC部 作品ポータル</h1>
+                </div>
+                <nav class="navigator">
+                    <a href="/" class="nav-item selected">
+                        <div class="icon home"></div>
+                        ホーム
+                    </a>
+                    <a href="/games/" class="nav-item">
+                        <div class="icon game"></div>
+                        ゲーム
+                    </a>
+                    <a href="/news/" class="nav-item">
+                        <div class="icon news"></div>
+                        ニュース
+                    </a>
+                </nav>
+            </header>
+            <div id="main-box">
+                <main>
+                    <h2 class="headline">何のサイト?</h2>
+                    <div class="section about-this-page">
+                        <p>
+                            このサイトは<strong class="coloring">サレジオ学院PC部</strong>の部員が作成した<strong
+                                class="coloring"
+                                >ゲーム</strong
+                            >を遊んでもらえるものです。<br />
+                            主にWEBで公開し、お手持ちのデバイスなどで手軽にプレイしてもらうものと購入していただいてお家で遊べるゲームの二つを提供しています。
+                            ここでは<strong class="coloring">WEBで遊べるゲーム</strong>をまとめています。<br />
+                            <strong class="coloring"
+                                >すべてのゲームはPCでプレイでき、一部はモバイル対応もしています。</strong
+                            ><small>モバイルでアクセスしている人が多いかもしれないのにすみません...</small>
+                            <a href="/games/">ゲームを見る</a>
+                        </p>
+                    </div>
+                    <h2 class="headline">おすすめの作品</h2>
+                    <div class="section recommend-games">
+                        <!-- JSで動的差し込み -->
+                    </div>
+                    <a href="/games/">すべてのゲームを見る</a>
+                    <h2 class="headline">ニュース</h2>
+                    <div class="section news-container">
+                        <!-- JSで動的差し込み -->
+                    </div>
+                    <a href="/news/">すべてのニュースを見る</a>
+                </main>
+            </div>
         </div>
-        <footer></footer>
+        <footer>
+            <p>アクセス</p>
+            <ul>
+                <li><a href="https://salesio-gakuin.ed.jp/">サレジオ学院</a></li>
+                <li><a href="https://salesio-festa.com/">サレジオ祭2026公式HP</a></li>
+            </ul>
+            <p>&copy; 2026 Salesio Gakuin PC Club. All rights reserved.</p>
+        </footer>
     </body>
 </html>

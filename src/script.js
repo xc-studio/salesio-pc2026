@@ -21,7 +21,7 @@ async function getAnalysis() {
     }
 }
 
-async function getGameData(path = "/src/data.json") {
+async function getGameData(path = "/data/game-data.json") {
     try {
         const res = await fetch(path);
         if (!res.ok) throw new Error("Server error");

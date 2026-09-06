@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>hello</title>
+
+        <link rel="preload" href="/assets/logo.png" as="image" />
+        <link rel="prefetch" href="/assets/home-not-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/home-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/game-not-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/game-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/news-not-selected.png" as="image" />
+        <link rel="prefetch" href="/assets/news-selected.png" as="image" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/src/style.css" />
+        <script src="/src/script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="title">
+                    <img src="/assets/logo.png" class="logo" />
+                    <h1 class="golden-text">サレジオ祭2026 PC部 作品ポータル</h1>
+                </div>
+                <nav class="navigator">
+                    <a href="/" class="nav-item">
+                        <div class="icon home"></div>
+                        ホーム
+                    </a>
+                    <a href="/games/" class="nav-item selected">
+                        <div class="icon game"></div>
+                        ゲーム
+                    </a>
+                    <a href="/news/" class="nav-item">
+                        <div class="icon news"></div>
+                        ニュース
+                    </a>
+                </nav>
+            </header>
+            <div id="main-box">
+                <main></main>
+                <aside></aside>
+            </div>
+            <footer></footer>
+        </div>
+    </body>
+</html>
