@@ -45,4 +45,29 @@ async function getNews(path = "/data/news.json") {
 
 function createArticle({ title, content, date, uuid }) {
     const isNew = localStorage.getItem(uuid) === null;
+    const article = document.createElement("article");
+    article.classList.add("news-row");
+    let formatted = "";
+    for (const el of content) formatted += `<p>${el}</p>`;
+    article.innerHTML = `
+    <div class="meta-tag">
+        ${isNew ? `<img src="/assets/new-tag.png" class="new-tag" />` : ""}
+        <time>${date}</time>
+    </div>
+    <h3 class="news-title">${title}</h3>
+    <div class="main-text">
+        ${formatted}
+    </div>
+    `;
+    return article;
 }
+
+async function main() {
+    const news = await getNews();
+    for (const el of news) {
+        const article = createArticle(el);
+        document.querySelector(".news-container").appendChild(article);
+    }
+}
+
+main();
